@@ -5,18 +5,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AmazonMain {
+public class GmailMain {
 
-    public AmazonMain() {
-
+    public GmailMain() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//a[@id='icp-nav-flyout']")
-    public WebElement language;
+@FindBy(id= ":mz")
+    public WebElement spamFolder;
 
-    @FindBy(xpath = "(//span[.='English'])[1]")
-    public WebElement english;
-
-
+    @FindBy (xpath= "(//span[@role='checkbox'])[2]")
+    public WebElement deleteAll;
 }

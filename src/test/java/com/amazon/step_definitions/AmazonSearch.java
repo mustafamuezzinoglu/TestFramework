@@ -18,9 +18,7 @@ public class AmazonSearch {
 
     @When("user write anything into the search box")
     public void userWriteAnythingIntoTheSearchBox() {
-
         Driver.getDriver().findElement(By.id("twotabsearchtextbox")).sendKeys("iphone"+ Keys.ENTER);
-
     }
 
     @Then("user is on the target page what written in the search box")
