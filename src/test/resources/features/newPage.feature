@@ -1,19 +1,26 @@
-@any
-
 Feature: new page feature
 
   User-Story : User can search anything inside the search box
+@wip1
+  Scenario: create
 
-  @some1
-  Scenario: new page1 functionality
+    When anything run
 
-    Given user is on the new page1
-    When user wait1
-    Then user is result1
+      | kiwi        |
+      | banana      |
+      | cucumber    |
+      | orange      |
+      | mango       |
+      | grape       |
+      | pomegranate |
 
-  @some2
-  Scenario: new page2 functionality
 
-    Given user is on the new page2
-    When user wait2
-    Then user is result2
+    Then finish
+
+      | student26@library | LkRHUXgR |
+      | student27@library | oMapQ5NZ |
+      | student28@library | Dmr6hS9g |
+      | student29@library | OQki3KSB |
+      | student30@library | 1HLRfjPS |
+
+

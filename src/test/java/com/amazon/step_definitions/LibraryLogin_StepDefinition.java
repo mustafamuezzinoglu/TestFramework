@@ -34,4 +34,10 @@ public class LibraryLogin_StepDefinition {
         locators.signInButton.click();
     }
 
+
+    @Then("user should be able see the dashboard")
+    public void user_should_be_able_see_the_dashboard() {
+//       Assert.assertFalse(Driver.getDriver().getTitle());
+    }
+
 }
