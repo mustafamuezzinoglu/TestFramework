@@ -6,6 +6,7 @@ import com.amazon.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.testng.Assert;
 
 import java.io.ObjectInputFilter;
 
@@ -37,7 +38,7 @@ public class LibraryLogin_StepDefinition {
 
     @Then("user should be able see the dashboard")
     public void user_should_be_able_see_the_dashboard() {
-//       Assert.assertFalse(Driver.getDriver().getTitle());
+       Assert.assertFalse(ConfigurationReader.keyValue("libraryUrl").equals(Driver.getDriver().getCurrentUrl()));
     }
 
 }

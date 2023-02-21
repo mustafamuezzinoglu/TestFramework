@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
         plugin = "html:target/cucumber-report.html",
         features = "src/test/resources/features",
         glue = "com/amazon/step_definitions",
-        dryRun = true,
-        tags = "@wip1"
+        dryRun = false,
+        tags = "@wip"
 )
 
 
