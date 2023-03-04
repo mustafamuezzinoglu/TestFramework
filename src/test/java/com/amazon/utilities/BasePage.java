@@ -1,11 +1,11 @@
 package com.amazon.utilities;
 
 
-import org.testng.annotations.BeforeMethod;
+import io.cucumber.java.Before;
 
 public class BasePage {
 
-@BeforeMethod
+@Before
 
     public void setUp(){
     Driver.getDriver().get(ConfigurationReader.keyValue("url"));
