@@ -1,6 +1,7 @@
 package com.amazon.pages;
 
 import com.amazon.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -12,11 +13,11 @@ public class AmazonMain {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//a[@id='icp-nav-flyout']")
-    public WebElement language;
+    @FindBy(id = "twotabsearchtextbox")
+    public WebElement searchBox;
 
-    @FindBy(xpath = "(//span[.='English'])[1]")
-    public WebElement english;
+    @FindBy(id = "nav-search-submit-button")
+    public WebElement searchButton;
 
 
 }
