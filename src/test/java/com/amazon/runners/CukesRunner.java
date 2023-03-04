@@ -6,11 +6,18 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = "html:target/cucumber-report.html",
+        plugin = {
+                "pretty",
+                "html:target/cucumber-report.html",
+                "rerun:target/cucumber-report.html",
+                "me.jvt.cucumber.report.PrettyReports:target/cucumber"
+        },
+
         features = "src/test/resources/features",
         glue = "com/amazon/step_definitions",
         dryRun = false,
-        tags = "@wip"
+        tags = "@wip",
+        publish = true
 )
 
 
