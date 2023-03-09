@@ -15,7 +15,7 @@ public class AmazonSearch {
     AmazonMain locators = new AmazonMain();
     @Given("user is on the search page")
     public void userIsOnTheSearchPage() {
-        Driver.getDriver().get(ConfigurationReader.keyValue("url"));
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
 
     @When("user write anything into the search box")

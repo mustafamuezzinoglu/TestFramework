@@ -18,7 +18,7 @@ public class LibraryLogin_StepDefinition {
 
     @Given("User is on login page")
     public void user_is_on_login_page() {
-        Driver.getDriver().get(ConfigurationReader.keyValue("libraryUrl"));
+        Driver.getDriver().get(ConfigurationReader.getProperty("libraryUrl"));
     }
 
     @When("user should be able to write username {string}")
@@ -39,7 +39,7 @@ public class LibraryLogin_StepDefinition {
 
     @Then("user should be able see the dashboard")
     public void user_should_be_able_see_the_dashboard() {
-       Assert.assertFalse(ConfigurationReader.keyValue("libraryUrl").equals(Driver.getDriver().getCurrentUrl()));
+       Assert.assertFalse(ConfigurationReader.getProperty("libraryUrl").equals(Driver.getDriver().getCurrentUrl()));
     }
 
 }
