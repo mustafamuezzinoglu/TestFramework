@@ -24,7 +24,7 @@ static{
 
 }
 
- public static String keyValue( String key  ){
+ public static String getProperty( String key  ){
  return properties.getProperty(key);
  }
 
