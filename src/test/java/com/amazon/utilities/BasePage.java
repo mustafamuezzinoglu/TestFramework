@@ -8,7 +8,7 @@ public class BasePage {
 @Before
 
     public void setUp(){
-    Driver.getDriver().get(ConfigurationReader.keyValue("url"));
+    Driver.getDriver().get(ConfigurationReader.getProperty("url"));
 
 
 }
