@@ -1,7 +1,8 @@
+@smoke
 Feature: new page feature
 
   User-Story : User can search anything inside the search box
-@wip1
+
   Scenario: create
 
     When anything run
